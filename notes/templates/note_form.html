@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Keep Notes
+{% endblock %}
+
+{% block content %}
+<h2> 
+    {%if form.instance.pk %}
+    Edit Notes
+    {% else %} 
+    Create Notes
+    {% endif %} 
+    <form method="post" enctype="multipart/form-data" class="form mt-4" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-warning" type="submit">Submit</button>
+    </form>
+    <a href="{% url 'note_list' %}">Back to Notes</a>
+</h2>
+{% endblock %}
