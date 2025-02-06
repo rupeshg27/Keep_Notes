@@ -30,16 +30,11 @@ The app is deployed on **Render**. You can access it [here](https://keep-notes-f
 
 6. Open http://127.0.0.1:8000/notes/
 
-Usage:
-    New users: Register and log in.
-    Existing users: Log in to access their notes.
-    Forgot password: Reset via email.
-    Create, edit, delete personal notes.
 
-Tech Stack:
-    Backend: Django, SQLite
-    Authentication: Django's built-in auth system
-    Deployment: Render
+## Tech Stack:
+- Backend: Django, SQLite
+- Authentication: Django's built-in auth system
+- Deployment: Render
 
 
 
