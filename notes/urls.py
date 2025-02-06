@@ -10,7 +10,6 @@ urlpatterns = [
     path('<int:note_id>/delete/', views.note_delete, name='note_delete'),
     path('register/', views.register, name='register'),
 
-
     # RESET PASSWORD
     path('password_reset/', auth_views.PasswordResetView.as_view(template_name='password_reset_form.html'), name='password_reset'),
     path('password_reset_done/', auth_views.PasswordResetDoneView.as_view(template_name='password_reset_done.html'), name='password_reset_done'),
